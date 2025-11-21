@@ -1,0 +1,42 @@
+@font-face {
+    font-family: myFont;
+    src: url("/assets/fonts/RubikDistressed-Regular.ttf");
+}
+
+.main_header_div{
+    background-color: #05063d;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.header_left_side{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header_left_side img{
+    width: 30%;
+    height: 10%;
+}
+
+.header_left_side label{
+    font-size: 22px;
+    color: #ade8f4;
+    font-family: myFont;
+}
+
+.header_right_side{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.header_right_side input{
+    cursor: text;
+    border-radius: 0.2rem;
+    margin-right: 25px;
+    background-color: rgb(54, 138, 194);
+    color: white;
+}
