@@ -4,7 +4,7 @@
 }
 
 .main_header_div{
-    background-color: #05063d;
+    background-color: black;
     display: flex;
     /* justify-content: space-between; */
 }
@@ -16,13 +16,13 @@
 }
 
 .header_left_side img{
-    width: 30%;
+    width: 15%;
     height: 10%;
 }
 
 .header_left_side label{
     font-size: 22px;
-    color: #ade8f4;
+    color: #b4c7c9;
     font-family: myFont;
 }
 
@@ -37,6 +37,78 @@
     cursor: text;
     border-radius: 0.2rem;
     margin-right: 25px;
-    background-color: rgb(54, 138, 194);
-    color: white;
+    background-color: #3a86ff;
+    color: black;
+    font-weight: bold;
+}
+
+.main_div{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+}
+
+.main_left_side{
+    width: 50%;
+}
+.main_left_side img{
+    width: 50%;
+}
+
+.main_right_side{
+    width: 50%;
+    height: 40%;
+    background-color: black;
+}
+
+#city_name{
+    font-weight: bold;
+}
+#country_name{
+    font-family: myFont;
+}
+.temparature{
+    justify-content: center;
+}
+#main_temparature{
+    font-size: 35px;
+    font-weight: bold;
+}
+#sub_main_temparature{
+    font-style: italic;
+
+}
+#temparature_feel_like{
+    font-style: italic;
+}
+#status{
+    font-size: 25px;
+}
+#date{
+    justify-content: center;   
+}
+
+.wind_speed_box{
+    text-align: center;
+    margin: 10%;
+}
+.humidity_box{
+    text-align: center;
+    margin: 10%;
+}
+.cloud_cover_box{
+    text-align: center;
+    margin: 10%;
+}
+.uv_index_box{
+    text-align: center;
+    margin: 10%;
+}
+.pressure_box{
+    text-align: center;
+    margin: 10%;
+}
+.visibility_box{
+    text-align: center;
+    margin: 10%;
 }
