@@ -1,4 +1,5 @@
 console.log("js loaded !");
+AOS.init();
 
 let apiKey="31a1523f2811458284d95942251611";
 let input=document.getElementById("txt_input");
@@ -7,6 +8,8 @@ input.addEventListener("keypress",e=>{
     if(e.key==="Enter"){
         apiCallCurrent(input.value);
         apiCallAstronomy(input.value);
+
+        input.value="";
     }
 })
 
@@ -14,6 +17,10 @@ let apiCallCurrent=(cityInput)=>{
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}&aqi=no`)
     .then(res => res.json())
     .then(data => {
+        if (data.error) {
+            alert(data.error.message);
+            return;
+        }
         setCurrentDetails(data);
     });
 }
@@ -22,6 +29,10 @@ let apiCallAstronomy=(cityInput)=>{
     fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${cityInput}&dt=2025-11-22`)
     .then(res => res.json())
     .then(data => {
+        // if (data.error) {
+        //     alert(data.error.message);
+        //     return;
+        // }
         setAstronomyDetails(data);
     });
 }
@@ -70,5 +81,6 @@ function setAstronomyDetails(data){
     sunRiseTime.innerText=data.astronomy.astro.sunrise;
     sunSetTime.innerText=data.astronomy.astro.sunset;
 }
+
 
 

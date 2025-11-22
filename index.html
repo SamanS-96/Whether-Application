@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -22,7 +23,7 @@
                 </div>
             </div>
             <div class="header_right_side">
-                <input type="text" placeholder="City" id="txt_input">
+                <input type="text" placeholder="Enter City Name" id="txt_input">
             </div>
         </div>
     </div>
@@ -31,10 +32,10 @@
     <div class="main_div container-fluid">
         <div class="main_left_side">
             <div style="display: flex;">
-                <div style="width: 50%; text-align: end;">
+                <div style="width: 50%; text-align: end;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                     <img src="assets/img/sunny.png" alt="Sunny Image" id="main_status_image">
                 </div>
-                <div style="width: 50%; text-align: center;">
+                <div style="width: 50%; text-align: center;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-map-pin" style="stroke: #a1a2ab;">
@@ -64,7 +65,7 @@
             </div>
             <div
                 style="width: 100%; background-color: #272831; display: flex; height: 38%; align-items: center; margin-top: 5%;">
-                <div style="width: 50%;text-align: center;">
+                <div style="width: 50%;text-align: center;" data-aos="fade-up" data-aos-duration="3000">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-sunrise" style="stroke: #a1a2ab;">
@@ -83,7 +84,7 @@
                         <label id="sun_rise_time" for="sun_rise">06:00 AM</label>
                     </div>
                 </div>
-                <div style="width: 50%; text-align: center;">
+                <div style="width: 50%; text-align: center;" data-aos="fade-down" data-aos-duration="3000">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-sunset" style="stroke: #a1a2ab;">
@@ -104,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="main_right_side" style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div class="main_right_side" style="display: grid; grid-template-columns: 1fr 1fr;" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
 
             <div class="wind_speed_box mt-1 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
@@ -218,6 +219,7 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
