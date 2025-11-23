@@ -26,7 +26,7 @@ let apiCallCurrent=(cityInput)=>{
 }
 
 let apiCallAstronomy=(cityInput)=>{
-    fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${cityInput}&dt=2025-11-22`)
+    fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${cityInput}&dt=DATE`)
     .then(res => res.json())
     .then(data => {
         // if (data.error) {
