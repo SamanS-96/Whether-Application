@@ -14,7 +14,7 @@ input.addEventListener("keypress",e=>{
 })
 
 let apiCallCurrent=(cityInput)=>{
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}&aqi=no`)
     .then(res => res.json())
     .then(data => {
         if (data.error) {
@@ -26,7 +26,7 @@ let apiCallCurrent=(cityInput)=>{
 }
 
 let apiCallAstronomy=(cityInput)=>{
-    fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${cityInput}&dt=DATE`)
+    fetch(`https://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${cityInput}&dt=DATE`)
     .then(res => res.json())
     .then(data => {
         // if (data.error) {
