@@ -1,0 +1,118 @@
+@font-face {
+    font-family: myFont;
+    src: url("/assets/fonts/RubikDistressed-Regular.ttf");
+}
+
+.main_header_div{
+    /* background-color: rgb(190, 62, 62); */ 
+    display: flex;
+    width: 96%;
+    margin: 2%;
+}
+
+.header_left_side{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header_left_side img{
+    width: 15%;
+    height: 10%;
+}
+
+.header_left_side label{
+    font-size: 22px;
+    color: #b4c7c9;
+    font-family: myFont;
+}
+
+.header_right_side{
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+}
+
+.header_right_side input{
+    cursor: text;
+    border-radius: 0.2rem;
+    margin-right: 10%;
+    background-color: #3a86ff;
+    color: black;
+    font-weight: bold;
+}
+
+.main_div{
+    display: flex;
+    color: aliceblue;
+    height: 400px;
+    width: 96%;
+    margin: 2%;
+}
+
+.main_left_side{
+    width: 50%;
+}
+.main_left_side img{
+    width: 50%;
+}
+
+.main_right_side{
+    width: 50%;
+    height: 40%;
+}
+
+#city_name{
+    font-weight: bold;
+}
+#country_name{
+    font-family: myFont;
+}
+.temparature{
+    justify-content: center;
+}
+#main_temparature{
+    font-size: 35px;
+    font-weight: bold;
+}
+#sub_main_temparature{
+    font-style: italic;
+
+}
+#temparature_feel_like{
+    font-style: italic;
+}
+#status{
+    font-size: 25px;
+}
+#date{
+    justify-content: center;   
+}
+
+.wind_speed_box{
+    text-align: center;
+    margin: 10%;
+}
+.humidity_box{
+    text-align: center;
+    margin: 10%;
+}
+.cloud_cover_box{
+    text-align: center;
+    margin: 10%;
+}
+.uv_index_box{
+    text-align: center;
+    margin: 10%;
+}
+.pressure_box{
+    text-align: center;
+    margin: 10%;
+}
+.visibility_box{
+    text-align: center;
+    margin: 10%;
+}
